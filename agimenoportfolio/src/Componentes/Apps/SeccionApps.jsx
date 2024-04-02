@@ -8,6 +8,7 @@ import spartanApp from '../../assets/Imagenes/spartanApp.jpg'
 
 
 import TresEnRaya from './TresEnRaya'
+import FullTaskApp from './FullTaskApp/FullTaskApp'
 
 const SeccionApps = ()=>{
     
@@ -29,7 +30,7 @@ const SeccionApps = ()=>{
 
                     </nav>
                     <section className=' h-[90vh] lg:h-[95%]  lg:w-[95%] border-[1px] border-neutral-100/10 box-border rounded-xl'>
-                        <TresEnRaya />
+                        <FullTaskApp />
                     </section> 
                 </article>
 

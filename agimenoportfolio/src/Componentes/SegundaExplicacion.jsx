@@ -21,7 +21,7 @@ const SegundaExplicacion = ()=>{
             <img 
                 style={shadowImagen}
                 src={programacion} alt="Cocentrate de Cal Newport" 
-                className='rounded-2xl w-[90%] lg:w-[55%] mx-auto self-center' />
+                className='rounded-2xl w-[90%] lg:w-[65%] mx-auto self-center' />
             <div className="flex flex-col gap-5 text-justify justify-start">
                 <p className={textoTipo}>
                     Aquí es donde entra la Programación y el Desarrollo Web, en este libro contaban que era un trabajo no complicado si no delicado, que te obligaba a sumirte en un estado de profundidad, fue ahí cuando sin tener ni idea, y sin saber que me iba a encontrar, empecé a investigar...</p>

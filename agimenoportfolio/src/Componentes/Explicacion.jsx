@@ -33,7 +33,7 @@ const Explicacion = ()=>{
             </div>
             <div className=' flex flex-col justify-center'>
                 <img src={libro} style={shadowImagen} alt="Concentrate de CalNewport" 
-                className='lg:w-[60%] mx-auto lg:mt-20 rounded-2xl' />
+                className='lg:w-[70%] mx-auto lg:mt-20 rounded-2xl' />
             </div>
 
         </section>
