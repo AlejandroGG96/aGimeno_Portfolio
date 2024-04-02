@@ -19,18 +19,18 @@ import certificado7 from '../assets/Imagenes/Certificado7.jpg'
 
 const Estudios = ()=>{
 
-    const textoTipo = "text-2xl text-neutral-100 px-8"
-    const estiloIconos = 'w-[14%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 aspect-square hover:border-teal-400'
+    const textoTipo = "text-lg lg:text-2xl text-neutral-100 lg:px-8"
+    const estiloIconos = 'w-[40%] lg:w-[14%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 aspect-square hover:border-teal-400 '
 
 
     return(
-        <section className="w-screen px-16 flex flex-col">
-            <div className="flex flex-col gap-3 text-justify px-10">
+        <section className="w-screen lg:px-16 flex flex-col px-6 items-center">
+            <div className="flex flex-col lg:gap-3 text-center lg:text-justify">
 {/* Conocimientos y aptitudes texto sobre mis estudios */}
-            <h3 className="text-6xl text-neutral-100 font-semibold ">Conocimientos y Aptitudes</h3>ç
+            <h3 className="text-4xl lg:text-6xl text-neutral-100 font-semibold ">Conocimientos y Aptitudes</h3>ç
             <p className={textoTipo}>
                     Mis estudios en este sector són rápidos así que empezaré por ahí, a fecha de hoy estoy cerca de terminar un Certificado Profesional de nivel 2 en un curso de Labora sobre Creación y Publicación de Páginas WEB, totalmente válido por el BOE y el Ministerio de Educación.</p>
-            {}
+            
             <p className={textoTipo}>
                     A fecha que estes leyendo esto, no se si ya estaré dentro o no, pero voy a cursar el FP Superior DAW, Desarrollo de Aplicaciones Multiplataforma, porque aunque nunca haya sido un gran fan de las enseñanzas públicas, ya que creo que todo puede aprenderse por uno mismo, creo que es importante, y planeo cursarlo semi-presencial para poder compaginarlo con un trabajo.</p>
                     
@@ -39,8 +39,8 @@ const Estudios = ()=>{
             </div>
 
 {/* Lenguajes que actualmente ya tengo aprendidos */}
-            <h3 className="text-5xl text-neutral-100 font-semibold mb-5 text-center my-20">Lo que ya tengo aprendido</h3>
-            <div className='flex w-screen gap-20 py-10'>
+            <h3 className="text-4xl lg:text-5xl text-neutral-100 font-semibold mb-5 text-center lg:my-20 my-8">Lo que ya tengo aprendido</h3>
+            <div className='flex flex-wrap justify-center w-screen gap-5 lg:gap-20 py-5 lg:py-10'>
                 <img className={estiloIconos} src={htmlIcon} alt="" />
                 <img className={estiloIconos} src={cssIcon} alt="" />
                 <img className={estiloIconos} src={javascriptIcon} alt="" />
@@ -52,22 +52,22 @@ const Estudios = ()=>{
 
 
 {/* CERTIFICADOS DE SOLO LEARN */}
-            <h3 className="text-5xl text-neutral-100 font-semibold mb-5 text-center my-20">Certificados Sololearn</h3>
-            <div className='w-[100%] py-10 grid grid-cols-4'>
+            <h3 className=" text-4xl lg:text-5xl text-neutral-100 font-semibold mb-5 text-center py-6 lg:my-20">Certificados Sololearn</h3>
+            <div className='w-[100%] lg:py-10 grid lg:grid-cols-4 place-items-center gap-5'>
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado1} alt="" />
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado2} alt="" />
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado3} alt="" />
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado4} alt="" />
               </div>
-              <div className='w-[80%] py-5 grid grid-cols-3 self-center'>
+              <div className='w-[100%] lg:w-[80%] py-5 grid lg:grid-cols-3 self-center place-items-center'>
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado5} alt="" />
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado6} alt="" />            
                 <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado7} alt="" />
               </div>
 
 {/* Lo que quiero seguir aprendiendo */}
-              <h3 className="text-5xl text-neutral-100 font-semibold mb-5 text-center my-20">Lo que voy a aprender</h3>
-            <div className='flex w-screen gap-20 py-10'>
+              <h3 className="text-4xl lg:text-5xl text-neutral-100 font-semibold lg:mb-5 text-center my-3 lg:my-20">Lo que voy a aprender</h3>
+            <div className='flex flex-wrap justify-center w-screen gap-5 lg:gap-20 py-5 lg:py-10'>
                 <img className={estiloIconos} src={nodejsIcon} alt="" />
                 <img className={estiloIconos} src={nextIcon} alt="" />
                 <img className={estiloIconos} src={zustandIcon} alt="" />

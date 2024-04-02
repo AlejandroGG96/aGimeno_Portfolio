@@ -13,22 +13,22 @@ const SeccionApps = ()=>{
     
 
     return(
-            <section className="p-8 px-4 flex flex-col gap-24 justify-center item">
-                <h1 className="text-6xl text-neutral-100 font-semibold text-center">Proyectos</h1>
-                <article className="h-screen w-screen grid grid-cols-[10%,90%] items-center gap-5">
-                    <nav className="h-[90%] w-[100%] border rounded-xl border-neutral-100/10  grid p-4 gap-2  overflow-auto">
+            <section className="lg:p-8 lg:px-4 flex flex-col  lg:gap-18 justify-center h-full gap-5">
+                <h1 className="text-4xl lg:text-6xl text-neutral-100 font-semibold text-center">Proyectos</h1>
+                <article className="h-screen lg:w-screen grid lg:grid-cols-[10%,90%] items-center lg:gap-5">
+                    <nav className="h-[15vh] lg:h-[90%] lg:w-[100%] border lg:rounded-xl lg:border-neutral-100/10 flex lg:grid p-2 lg:p-4 gap-2 overflow-auto ">
                         
-                        <ul className='flex flex-col gap-2'>
-                            <li><img  src={tresRayaApp} className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
-                            <li><img  src={calculadoraApp} className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
-                            <li><img  src={progLoveApp}className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
-                            <li><img  src={candleStickMarket}className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
-                            <li><img  src={fullTasksApp}className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
-                            <li><img  src={spartanApp}className="border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                        <ul className='flex lg:flex-col gap-4 lg:gap-2 px-5 lg:px-0'>
+                            <li className='aspect-square'><img  src={tresRayaApp} className="w-[100%] border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                            <li className='aspect-square'><img  src={calculadoraApp} className="w-[100%]  border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                            <li className='aspect-square'><img  src={progLoveApp}className="w-[100%]  border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                            <li className='aspect-square'><img  src={candleStickMarket}className="w-[100%]  border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                            <li className='aspect-square'><img  src={fullTasksApp}className="w-[100%]  border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
+                            <li className='aspect-square'><img  src={spartanApp}className="w-[100%]  border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>
                         </ul>
 
                     </nav>
-                    <section className='h-[95%] w-[95%] border-[1px] border-neutral-100/10 box-border rounded-xl'>
+                    <section className=' h-[90vh] lg:h-[95%]  lg:w-[95%] border-[1px] border-neutral-100/10 box-border rounded-xl'>
                         <TresEnRaya />
                     </section> 
                 </article>

@@ -10,7 +10,7 @@ const HomePage=()=>{
    
     
     return(
-        <main className="flex flex-col gap-16 box-border font-[Arial] overflow-hidden bg-gradient-to-b from-gray-950 via-gray-950 to-teal-800">
+        <main className="flex flex-col gap-16 box-border font-[Arial] overflow-x-hidden bg-gradient-to-b from-gray-950 via-gray-950 to-teal-800">
             <Hero />
             <Explicacion />
             <SegundaExplicacion />

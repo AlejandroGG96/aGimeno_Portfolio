@@ -16,14 +16,14 @@ const Casilla = ({children, updateBoard, index}) =>{
   }
 
   return(
-      <div onClick={handleClick} className="  bg-sky-950 border-[2px] border-gray-300 font-mono text-7xl text-gray-300 flex items-center justify-center rounded-2xl hover:border-teal-300 cursor-pointer transition-all hover:bg-red-700/40 active:bg-yellow-500/50 select-none aspect-square">
+      <div onClick={handleClick} className="  bg-sky-950 border-[2px] border-gray-300 font-mono text-4xl lg:text-7xl text-gray-300 flex items-center justify-center rounded-2xl hover:border-teal-300 cursor-pointer transition-all hover:bg-red-700/40 active:bg-yellow-500/50 select-none aspect-square">
           {children}
       </div>
   )
 }
 
 // Definicion de Marcadores : 
-const Marcador = ({children, isSelected}) =><div className={`${isSelected ?'bg-blue-700' : null} text-neutral-100 border-[1px] border-neutral-100/30 text-7xl p-8 text-center rounded-xl aspect-square`} >{children}</div>
+const Marcador = ({children, isSelected}) =><div className={`${isSelected ?'bg-blue-700' : null} text-neutral-100 border-[1px] border-neutral-100/30 text-5xl lg:text-7xl p-3 lg:p-8 text-center content-center rounded-xl aspect-square`} >{children}</div>
 
 // Combos Ganadores : 
 const combosGanadores = [
@@ -115,8 +115,8 @@ const TresEnRaya = ()=>{
 }
 
     return(
-        <div className="h-[100%] w-[100%] flex justify-center items-center bg-gray-900 ">
-          <div className=" grid grid-cols-3 w-[40%] aspect-square gap-2">
+        <div className="h-[100%] w-[100%] gap-20 flex flex-col lg:flex-row justify-center items-center bg-gray-900 ">
+          <div className=" grid grid-cols-3 w-[80%] lg:w-[40%] aspect-square gap-2">
             {/* Mapeado de la lista Tablero para renderizar las Casillas : */}
             {tablero.map((_,index)=>{
                 return(
@@ -128,14 +128,14 @@ const TresEnRaya = ()=>{
                 )
             })}
             </div>
-            <article className="flex flex-col relative left-36 border-[1px] border-neutral-100/10 px-10 py-20 gap-10 rounded-xl">
+            <article className="flex flex-wrap lg:flex-col relative lg:left-36 lg:border-[1px] justify-center border-neutral-100/10 px-10  lg:py-20 gap-5 rounded-xl">
               <Marcador isSelected={turno == TURNS.X}>{TURNS.X}</Marcador>
               <Marcador isSelected={turno == TURNS.O}>{TURNS.O}</Marcador>
               <button onClick={resetGame} className="text-lg bg-red-500/90 rounded-lg text-neutral-100 w-[100%] py-2 hover:scale-[1.05] hover:bg-red-400 select-none transition-all">Reset</button>
             </article>
             { ganador !== null && (
-              <article className=" absolute bg-black/80 w-[60%] h-[60%] rounded-xl border-[5px] border-neutral-100/10 flex flex-col items-center justify-center gap-10">
-                <div className="text-neutral-100 text-5xl">
+              <article className=" absolute bg-black/80 w-[100%] lg:w-[60%] h-[100%] rounded-xl border-[5px] border-neutral-100/10 flex flex-col items-center justify-center gap-10">
+                <div className="text-neutral-100 text-3xl lg:text-5xl text-center">
                   {
                     ganador == false
                       ? 'Empate entre los Jugadores...'
@@ -143,12 +143,12 @@ const TresEnRaya = ()=>{
                   }
                 </div>
 
-                <header className=" w-fit">
+                <header className="w-fit">
                   { ganador && <Marcador>{ganador}</Marcador>}
                 </header>
 
                 <footer>
-                  <button onClick={resetGame} className="text-2xl px-10 py-4 rounded-lg bg-red-700 text-neutral-100 hover:scale-[1.05] hover:bg-red-400 transition-all">Empezar de nuevo</button>
+                  <button onClick={resetGame} className="text-lg lg:text-2xl px-10 py-4 rounded-lg bg-red-700 text-neutral-100 hover:scale-[1.05] hover:bg-red-400 transition-all">Empezar de nuevo</button>
                 </footer>
               </article>
             ) }
