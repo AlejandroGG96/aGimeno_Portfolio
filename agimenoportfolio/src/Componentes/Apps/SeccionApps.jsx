@@ -17,7 +17,7 @@ const SeccionApps = ()=>{
             <section className="lg:p-8 lg:px-4 flex flex-col  lg:gap-18 justify-center h-full gap-5">
                 <h1 className="text-4xl lg:text-6xl text-neutral-100 font-semibold text-center">Proyectos</h1>
                 <article className="h-screen lg:w-screen grid lg:grid-cols-[10%,90%] items-center lg:gap-5">
-                    <nav className="h-[15vh] lg:h-[90%] lg:w-[100%] border lg:rounded-xl lg:border-neutral-100/10 flex lg:grid p-2 lg:p-4 gap-2 overflow-auto ">
+                    <nav className="h-[15vh] lg:h-[90%] lg:w-[100%] border-y lg:border lg:rounded-xl border-neutral-100/40 flex lg:grid p-2 lg:p-4 gap-2 overflow-auto ">
                         
                         <ul className='flex lg:flex-col gap-4 lg:gap-2 px-5 lg:px-0'>
                             <li className='aspect-square'><img  src={tresRayaApp} className="w-[100%] border-[1px] border-neutral-100/10  rounded-xl hover:scale-[1.05] cursor-pointer transition-all hover:border-teal-400" /></li>

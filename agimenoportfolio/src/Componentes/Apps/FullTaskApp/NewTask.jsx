@@ -1,8 +1,10 @@
+import { useState } from "react";
 
-export const NewTask=()=>{
 
-    render(
-        
+
+    // Destructuring data task
+    return(
+       
     )
 
 }
