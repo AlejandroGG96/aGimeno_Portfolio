@@ -134,7 +134,7 @@ const TresEnRaya = ()=>{
               <button onClick={resetGame} className="text-lg bg-red-500/90 rounded-lg text-neutral-100 w-[100%] py-2 hover:scale-[1.05] hover:bg-red-400 select-none transition-all">Reset</button>
             </article>
             { ganador !== null && (
-              <article className=" absolute bg-black/80 w-[100%] lg:w-[60%] h-[100%] rounded-xl border-[5px] border-neutral-100/10 flex flex-col items-center justify-center gap-10">
+              <article className=" absolute bg-black/80 w-[100%] lg:w-[60%] h-[80%] rounded-xl border-[5px] border-neutral-100/10 flex flex-col items-center justify-center gap-10">
                 <div className="text-neutral-100 text-3xl lg:text-5xl text-center">
                   {
                     ganador == false

@@ -5,11 +5,11 @@ import curriculumImagen from '../assets/Imagenes/Curriculum.jpg'
 const Header =()=>{
 
     const [curriculum, setCurriculum] = useState(false)
-    const [posicionCurriculum, setPosicionCurriculum] = useState(window.innerHeight * 2 )
+    const [posicionCurriculum, setPosicionCurriculum] = useState(window.innerWidth * 2 )
 
     const mostrarCurriculum=()=>{
     setCurriculum(!curriculum);
-    setPosicionCurriculum(curriculum ? window.innerHeight * 2 : (window.innerHeight * 0))
+    setPosicionCurriculum(curriculum ? window.innerWidth * 5 : (window.innerWidth * 0))
     }
 
 
@@ -26,7 +26,7 @@ const Header =()=>{
                      hover:border-teal-400 z-50">{ curriculum ? '❌' : '📋'}</button>
                      <article 
                      style={{
-                    top: `${posicionCurriculum}px`
+                    left: `${posicionCurriculum}px`
                      }}
                      className="transition-all fixed lg:w-[100vw] lg:h-[100vh] left-0 bottom-0 h-screen my-auto bg-black/80 flex flex-col justify-center items-center z-20">
                         <img  src={curriculumImagen} className="lg:w-[30vw] w-[90%]" alt="" />
