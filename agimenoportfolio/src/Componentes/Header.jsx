@@ -18,7 +18,7 @@ const Header =()=>{
 
     return(
 
-        <header className=" justify-between fixed top-0 h-[8vh] w-[100vw] border-b bg-black/75 border-teal-400  z-50 flex items-center font-mono p-3 px-4 lg:px-12">
+        <header className=" justify-between fixed lg:absolute top-0 h-[8vh] w-[100vw] border-b bg-black/75 border-teal-400  z-50 flex items-center font-mono p-3 px-4 lg:px-12">
                     <h1 className="text-neutral-100 text-lg lg:text-2xl">Alejandro Gimeno</h1>
                     <button 
                     onClick={mostrarCurriculum}
