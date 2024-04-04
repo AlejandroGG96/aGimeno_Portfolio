@@ -10,7 +10,7 @@ import spartanApp from '../../assets/Imagenes/spartanApp.jpg'
 
 import TresEnRaya from './TresEnRaya'
 import FullTaskApp from './FullTaskApp/FullTaskApp'
-import CalculadoraApp from './CalculadoraApp'
+import CalculadoraApp from './CalculadoraApp/CalculadoraApp'
 import ProLoveApp from './ProLoveApp'
 import CandleStickMarket from './CandleStickMarket'
 import SpartanApp from './SpartanApp'
@@ -22,7 +22,7 @@ const SeccionApps = ()=>{
             <section className="lg:p-8 lg:px-4 flex flex-col  lg:gap-18 justify-center h-full gap-5">
                 <h1 className="text-4xl lg:text-6xl text-neutral-100 font-semibold text-center">Proyectos</h1>
                 <p className='text-lg text-neutral-100 text-center border-2 border-neutral-100/30 bg-black/20 w-[90%] rounded-lg self-center py-2'>Toca en cada uno de los iconos para ver pequeños proyectos individuales.</p>
-                <article className="h-screen lg:w-screen grid lg:grid-cols-[10%,90%] items-center lg:gap-5">
+                <article className=" lg:w-screen grid lg:grid-cols-[10%,90%] items-center lg:gap-5">
                     <nav className=" lg:h-[95%] lg:w-[100%] lg:border lg:rounded-xl border-neutral-100/40 flex lg:grid lg:p-4 gap-1 overflow-auto ">
                         
                         <ul className='flex lg:flex-col gap-2 lg:gap-2 px-2 lg:px-0'>

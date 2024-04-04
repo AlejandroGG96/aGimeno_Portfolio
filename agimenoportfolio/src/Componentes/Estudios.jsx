@@ -53,16 +53,14 @@ const Estudios = ()=>{
 
 {/* CERTIFICADOS DE SOLO LEARN */}
             <h3 className=" text-4xl lg:text-5xl text-neutral-100 font-semibold mb-5 text-center py-6 lg:my-20">Certificados Sololearn</h3>
-            <div className='w-[100%] lg:py-10 grid lg:grid-cols-4 place-items-center gap-5'>
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado1} alt="" />
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado2} alt="" />
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado3} alt="" />
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado4} alt="" />
-              </div>
-              <div className='w-[100%] lg:w-[80%] py-5 grid lg:grid-cols-3 self-center place-items-center'>
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado5} alt="" />
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado6} alt="" />            
-                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400' src={certificado7} alt="" />
+            <div className='w-[100%] lg:py-10 lg:grid lg:grid-cols-4 flex place-items-center gap-5 overflow-x-auto py-5 '>
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 ml-5 ' src={certificado1} alt="" />
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 ' src={certificado2} alt="" />
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 ' src={certificado3} alt="" />
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 ' src={certificado4} alt="" />
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 ' src={certificado5} alt="" />
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400  ' src={certificado6} alt="" />            
+                <img className='w-[85%] border-[1px] p-5 border-neutral-100/20 rounded-[15px] hover:scale-[1.1] transition-all cursor-pointer hover:bg-white/10 hover:border-teal-400 mr-5 ' src={certificado7} alt="" />
               </div>
 
 {/* Lo que quiero seguir aprendiendo */}

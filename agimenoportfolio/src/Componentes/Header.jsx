@@ -28,7 +28,7 @@ const Header =()=>{
                      style={{
                     left: `${posicionCurriculum}px`
                      }}
-                     className="transition-all fixed lg:w-[100vw] lg:h-[100vh] left-0 bottom-0 h-screen my-auto bg-black/80 flex flex-col justify-center items-center z-20">
+                     className={` ${curriculum ? 'opacity-100':'opacity-0'} transition-all fixed lg:w-[100vw] lg:h-[100vh] left-0 bottom-0 h-screen my-auto bg-black/80 flex flex-col justify-center items-center z-20`}>
                         <img  src={curriculumImagen} className="lg:w-[30vw] w-[90%]" alt="" />
                         
                         <div className="text-center flex lg:flex-row gap-3 lg:gap-6 relative top-6">
